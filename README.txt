@@ -1,1 +1,1 @@
-# hamburger
+RaiseTechの最終課題で静的サイトをWordPress化しました。
