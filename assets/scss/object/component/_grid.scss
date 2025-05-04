@@ -1,0 +1,7 @@
+.c-grid {
+    display: grid;
+
+    &__item--1of1 {
+        grid-area: 1 / 1;
+    }
+}

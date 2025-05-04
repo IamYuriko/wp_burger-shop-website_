@@ -1,0 +1,17 @@
+@use "../../foundation/global" as *;
+
+//single, pageのコード記述箇所
+
+.p-code {
+    background-color: $bg-quote;
+    height: auto;
+    padding: 3.125rem 3.75rem 3.125rem 3.125px;
+
+    @include breakpoint(m) {
+        margin-bottom: 60px;
+    }
+
+    @include breakpoint(s) {
+        margin-bottom: 30px;
+    }
+}

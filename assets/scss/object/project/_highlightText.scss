@@ -1,0 +1,15 @@
+@use "../../foundation/global" as *;
+
+//single、pageの太字テキスト
+
+.p-highlightText {
+    padding-bottom: 277px;
+
+    @include breakpoint(m) {
+        padding-bottom: 149px;
+    }
+
+    @include breakpoint(s) {
+        padding-bottom: 69px;
+    }
+}

@@ -1,0 +1,11 @@
+@use "../../foundation/global" as *;
+
+/*画面幅が1024px以上になったら非表示*/
+.u-hide--pc {
+    display: none;
+
+    /*画面幅が~1024pxで表示*/
+    @include breakpoint(m) {
+        display: block;
+    }
+}

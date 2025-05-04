@@ -1,0 +1,51 @@
+@use "../../foundation/global" as *;
+
+//archive, archive-searchのファーストビュー
+
+.p-fv-archive {
+    min-height: 239px;
+    position: relative;
+    margin-bottom: 63px;
+
+    @include breakpoint(m) {
+        min-height: 285px;
+        margin-bottom: 39px;
+    }
+
+    @include breakpoint(s) {
+        margin-bottom: 32px;
+    }
+
+    &::before {
+        content: "";
+        background-color: $mv-overlay;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__contents {
+        position: absolute;
+        top: 50%;
+        left: 5.375rem;
+        transform: translate(-5.34%, -50%);
+        z-index: 2;
+
+        @include breakpoint(s) {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+    }
+
+    &__subtitle {
+        display: inline-block;
+        color: white;
+        padding-left: 19px;
+    }
+}

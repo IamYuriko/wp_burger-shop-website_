@@ -1,0 +1,11 @@
+@use "../../foundation/global" as *;
+
+//single, pageのボタン
+
+.p-button-single {
+    margin-bottom: 61px;
+
+    @include breakpoint(s) {
+        margin-bottom: 31px;
+    }
+}

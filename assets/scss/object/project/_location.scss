@@ -1,0 +1,81 @@
+@use "../../foundation/global" as *;
+
+//Frontページの背景マップ箇所
+
+.p-location {
+    width: 100%;
+    height: 100%;
+
+    &__overlay {
+        width: 100%;
+        height: 100%;
+
+        &::before {
+            content: "";
+            background-color: $map-overlay02;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            z-index: 1;
+            pointer-events: none;
+        }
+    }
+
+    &__map {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    &__container {
+        width: 70%;
+        height: auto;
+        background-color: $map-overlay01;
+        padding: 86px 134px 75px 119px;
+        color: white;
+        z-index: 3;
+        position: relative;
+        pointer-events: none;
+
+        @include breakpoint(m) {
+            width: 100%;
+            height: 100%;
+            padding: 42px 1.813rem 40px 2.625rem;
+            font-size: 1.4rem;
+        }
+
+        @include breakpoint(s) {
+            width: 100%;
+            height: 60%;
+        }
+    }
+
+    &__title {
+        padding-bottom: 50.5px;
+
+        @include breakpoint(m) {
+            padding-bottom: 15px;
+            font-size: 3rem;
+        }
+    }
+
+    &__line {
+        margin-bottom: 58.5px;
+        width: 75px;
+
+        @include breakpoint(m) {
+            margin-bottom: 14px;
+        }
+    }
+
+    &__text {
+        color: white;
+        line-height: 3.3;
+        height: auto;
+
+        @include breakpoint(m) {
+            font-size: 1.4rem;
+        }
+    }
+}

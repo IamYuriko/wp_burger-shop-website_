@@ -1,0 +1,91 @@
+@use "../../foundation/global" as *;
+
+//FrontページのTake Out/Eat in
+
+.p-menu {
+    margin-bottom: 130px;
+
+    @include breakpoint(m) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint(s) {
+        margin-bottom: 49px;
+    }
+
+    &__inner {
+        gap: 5rem;
+        grid-template-columns: repeat(auto-fit, minmax(20.938rem, 1fr));
+
+        @include breakpoint(m) {
+            gap: 2.563rem;
+        }
+
+        @include breakpoint(s) {
+            gap: 1.25rem;
+        }
+    }
+
+    &__wrapper {
+        padding-top: 26px;
+        padding-left: 11px;
+    }
+
+    &__title {
+        padding-bottom: 2.563px;
+    }
+
+    &__line {
+        width: 63px;
+
+        @include breakpoint(m) {
+            width: 36px;
+        }
+
+        @include breakpoint(s) {
+            width: 34px;
+        }
+    }
+
+    &__link {
+        color: $secondary-color;
+
+        &:hover {
+            opacity: .75;
+            transition: all .2s ease-in-out;
+        }
+    }
+
+    &__container {
+        background-color: $container-menu;
+        margin: 0 20px 20px 20px;
+        height: auto;
+        padding: 14px 20px;
+    }
+
+    &__subtitle {
+        padding-bottom: 1.125rem;
+
+        @include breakpoint(m) {
+            font-size: 2.4rem;
+            padding-bottom: 1rem;
+        }
+
+        @include breakpoint(s) {
+            font-size: 2.2rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    &__text {
+        height: auto;
+
+        @include breakpoint(m) {
+            font-size: 1.4rem;
+        }
+
+        @include breakpoint(m) {
+            font-size: unset;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@use "../../foundation/global" as *;
+
+//検索フォーム
+
+.p-searchForm {
+    width: 50%;
+    height: 46px;
+
+    @include breakpoint(m) {
+        width: 90%;
+    }
+
+    &__button {
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,38 @@
+@use "../../foundation/global" as *;
+
+.c-button {
+    @include secondary-bold;
+    text-align: center;
+    border: 1px solid $primary-color;
+    background: $button-gradient;
+    display: inline-block;
+
+    &--search {
+        border-radius: 10px;
+        color: $primary-color;
+        width: 136px;
+        height: 46px;
+
+        &:hover {
+            color: $secondary-color;
+        }
+
+        @include breakpoint(s) {
+            width: 90px;
+        }
+    }
+
+    &--large {
+        border-radius: 20px;
+        color: $secondary-color;
+        padding: 2.5rem 15rem;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
+
+.wp-block-button:hover{
+    opacity: .7;
+}

@@ -1,0 +1,15 @@
+@use "../../foundation/global" as *;
+
+.c-line {
+    display: block;
+    border-style: solid;
+    border-color: white;
+
+    &--m {
+        border-width: 4px;
+    }
+
+    &--l {
+        border-width: 2px;
+    }
+}

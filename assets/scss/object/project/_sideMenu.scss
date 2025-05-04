@@ -1,0 +1,93 @@
+@use "../../foundation/global" as *;
+
+//サイドバー内メニュー
+
+.p-sideMenu {
+    width: 100%;
+
+    //ハンバーガーメニュー閉じるボタン
+    &__closeBtn {
+        @include breakpoint(m) {
+            display: block;
+            width: 45px;
+            height: 35px;
+            top: 5px;
+            left: 115%;
+            cursor: pointer;
+            position: relative;
+            margin-bottom: 121px;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 6px;
+                width: 35px;
+                background-color: $primary-color;
+                transform: rotate(45deg);
+                position: absolute;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 6px;
+                width: 35px;
+                background-color: $primary-color;
+                transform: rotate(-45deg);
+                position: absolute;
+            }
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+
+    &__title {
+        padding-bottom: 90px;
+    }
+
+    &__lists {
+        white-space: nowrap;
+    }
+
+    &__list {
+        padding-bottom: 32px;
+        a{
+            color: $primary-color;
+            
+            &:hover{
+            opacity: .7;
+            }
+        }
+    }
+
+    &__item {
+        padding-left: 20px;
+    }
+}
+
+.p-sideMenu__lists {
+    list-style-type: none;
+
+    a {
+    font-size: 2.4rem;
+    @include secondary-bold;
+    padding-bottom: 32px;
+    display: block;
+    }
+} 
+
+.p-sideMenu__subList {
+    list-style-type: none;
+    padding-left: 20px;
+
+    a {
+        padding-bottom: 20px;
+        font-size: 2rem;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+}

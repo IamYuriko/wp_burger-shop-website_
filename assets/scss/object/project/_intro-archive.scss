@@ -1,0 +1,24 @@
+@use "../../foundation/global" as *;
+
+//archive、archive-searchのイントロダクション
+
+.p-intro-archive {
+    margin-bottom: 70px;
+
+    @include breakpoint(m) {
+        margin-bottom: 37px;
+    }
+
+    @include breakpoint(s) {
+        margin-bottom: 19px;
+    }
+
+    &__title {
+        padding-bottom: 20px;
+
+        @include breakpoint(s) {
+            padding-bottom: 25px;
+            font-size: 2.8rem;
+        }
+    }
+}

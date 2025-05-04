@@ -1,0 +1,25 @@
+@use "../../foundation/global" as *;
+
+//single、pageの左写真、右テキスト箇所
+
+.p-media {
+    margin-bottom: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(7.125rem, 1fr));
+    gap: 2.5rem;
+
+    @include breakpoint(m) {
+        gap: 1.25rem;
+    }
+
+    @include breakpoint(s) {
+        gap: 1rem;
+    }
+
+    &__image {
+        height: auto;
+    }
+
+    &__text {
+        height: 100%;
+    }
+}

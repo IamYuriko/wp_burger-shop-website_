@@ -1,0 +1,18 @@
+@use "../../foundation/global" as *;
+
+//single、pageの小さめ中央配置の写真
+
+.p-smallerImage {
+    max-width: 36.313rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    @include breakpoint(m) {
+        margin-bottom: 241px;
+    }
+
+    @include breakpoint(s) {
+        margin-bottom: 30px;
+    }
+}

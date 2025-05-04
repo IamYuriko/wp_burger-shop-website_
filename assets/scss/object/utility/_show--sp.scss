@@ -1,0 +1,19 @@
+@use "../../foundation/global" as *;
+
+/*画面幅が375px以下になったら表示*/
+
+.u-show--sp {
+    @include breakpoint(s) {
+        display: block;
+    }
+}
+
+.u-show--onlySp {
+    @include breakpoint(s) {
+        display: block;
+    }
+
+    @include breakpoint(l) {
+        display: none;
+    }
+}

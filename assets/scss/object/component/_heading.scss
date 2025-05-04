@@ -1,0 +1,33 @@
+@use "../../foundation/global" as *;
+
+.c-heading {
+    @include secondary-bold;
+
+    &--xs {
+        font-size: 2rem;
+    }
+
+    &--sm {
+        font-size: 2.4rem;
+    }
+
+    &--md {
+        font-size: 2.8rem;
+    }
+
+    &--lg {
+        font-size: 3.4rem;
+    }
+
+    &--xl {
+        font-size: 3.6rem;
+    }
+
+    &--xxl {
+        font-size: 4rem;
+    }
+
+    &--xxxl {
+        font-size: 6rem;
+    }
+}

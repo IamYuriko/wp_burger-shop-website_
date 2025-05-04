@@ -1,0 +1,31 @@
+@use "../../foundation/global" as *;
+
+//single、pageの表
+
+.p-table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    table-layout: fixed;
+    margin-bottom: 60px;
+
+    &__row {
+        border: 1px solid $primary-color;
+    }
+
+    &__column {
+        border: 1px solid $primary-color;
+        color: $secondary-color;
+        padding-left: 1.875rem;
+        text-align: left;
+    }
+
+    &__column:nth-child(1) {
+        width: 30%;
+    }
+
+    &__column:nth-child(2) {
+        width: 70%;
+    }
+}

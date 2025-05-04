@@ -1,0 +1,25 @@
+@use "../../foundation/global" as *;
+
+.p-overlay-hamburgerMenu {
+    @include breakpoint(m) {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        background-color: $bg-overlay;
+        width: 0;
+        height: 0;
+
+        &.is-active {
+            @include breakpoint(m) {
+                /* メニューが表示されているときに背景が表示 */
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 100vh;
+                animation-name: bg-in;
+                animation-duration: 300ms;
+                animation-timing-function: ease-out;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@use "../foundation/global" as *;
+
+.l-header {
+    background-color: $bg-header;
+    width: 100%;
+    height: 214px;
+    position: relative;
+
+    &__inner {
+        padding: 5rem 1.938rem 0 4.063rem;
+    }
+
+    &__contents {
+        @include breakpoint(m) {
+            flex-direction: column;
+        }
+    }
+
+    //ハンバーガーボタン開けるボタン
+    &__openBtn {
+        top: 0;
+        right: 10px;
+        position: absolute;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__logo {
+        @include breakpoint(m) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__link {
+        color: $primary-color;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+}

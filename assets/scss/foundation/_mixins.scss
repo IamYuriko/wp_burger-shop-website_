@@ -1,0 +1,45 @@
+// fonts
+
+@mixin primary-bold($weight: 700) {
+    font-family: "Roboto",
+        sans-serif;
+    font-weight: $weight;
+}
+
+@mixin secondary-bold($weight: 700) {
+    font-family: "M PLUS 1p",
+        sans-serif;
+    font-weight: $weight;
+}
+
+@mixin secondary-normal($weight: 400) {
+    font-family: "M PLUS 1p",
+        sans-serif;
+    font-weight: $weight;
+}
+
+//breakpoints
+
+@mixin breakpoint($point) {
+
+    /*以下は画面幅が1024px以上になったら適応される*/
+    @if $point==l {
+        @media (min-width:1024px) {
+            @content ;
+        }
+    }
+
+    /*以下は画面幅が0~1024pxで適応される*/
+    @if $point==m {
+        @media (max-width: 1024px) {
+            @content ;
+        }
+    }
+
+    /*以下は画面幅が0~768px以下になったら適応される*/
+    @if $point==s {
+        @media (max-width: 768px) {
+            @content ;
+        }
+    }
+}

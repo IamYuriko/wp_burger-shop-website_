@@ -1,0 +1,11 @@
+@use "../../foundation/global" as *;
+
+//single、pageの横幅いっぱいの写真
+
+.p-largerImage {
+    margin-bottom: 60px;
+
+    @include breakpoint(s) {
+        margin-bottom: 30px;
+    }
+}

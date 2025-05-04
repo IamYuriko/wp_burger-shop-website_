@@ -1,0 +1,9 @@
+@use "../../foundation/global" as *;
+
+
+/*画面幅が375px以下になったら非表示*/
+.u-hide--sp {
+    @include breakpoint(s) {
+        display: none;
+    }
+}

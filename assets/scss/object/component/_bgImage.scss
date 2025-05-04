@@ -1,0 +1,28 @@
+@use "../../foundation/global" as *;
+
+//Take OutとEat Inの背景
+
+.c-bgImage {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    min-height: 1197px;
+
+    @include breakpoint(m) {
+        min-height: 681px;
+    }
+
+    @include breakpoint(s) {
+        min-height: 642px;
+    }
+
+    &--takeOut {
+        background-image: url(../images/pc-menu-take-out_front@2x.jpg);
+    }
+
+    &--eatIn {
+        background-image: url(../images/pc-menu-eat-in_front@2x.jpg);
+    }
+}

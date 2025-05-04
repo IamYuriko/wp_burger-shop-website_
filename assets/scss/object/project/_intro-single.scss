@@ -1,0 +1,28 @@
+@use "../../foundation/global" as *;
+
+//single、pageのイントロダクション
+
+.p-intro-single {
+    margin-bottom: 60px;
+
+    @include breakpoint(m) {
+        margin-bottom: 55px;
+    }
+
+    @include breakpoint(s) {
+        margin-bottom: 36px;
+    }
+
+    &__title {
+        padding-bottom: 57px;
+        font-size: 2.8rem;
+
+        @include breakpoint(m) {
+            margin-bottom: 60px;
+        }
+
+        @include breakpoint(s) {
+            margin-bottom: 25px;
+        }
+    }
+}

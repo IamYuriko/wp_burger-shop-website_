@@ -1,0 +1,35 @@
+@use "../foundation/global" as *;
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    @include secondary-normal;
+    color: $secondary-color;
+    background-color: $bg-main;
+}
+
+iframe {
+    vertical-align: bottom;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-position: inside;
+    
+    .wp-block-list {
+    padding-left: 2rem;
+    }
+}
+

@@ -1,0 +1,20 @@
+@use "../../foundation/global" as *;
+
+.c-button-card {
+    border-radius: 60px;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid white;
+    color: $primary-color;
+    @include secondary-bold;
+    padding: 1.25rem 6.625rem;
+
+    &:hover {
+        color: $secondary-color;
+        text-decoration: underline;
+    }
+
+    @include breakpoint(m) {
+        padding: 0.688rem 2.635rem;
+    }
+}

@@ -1,0 +1,45 @@
+@use "../foundation/global" as *;
+
+.l-sidebar {
+    background-color: $bg-sideMenu;
+    width: 20vw;
+    height: auto;
+    min-height: 100%;
+
+    @include breakpoint(m) {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: -90%;
+        overflow: scroll;
+        transition: 0.3s ease-out;
+        overflow-x: hidden;
+
+
+        &.is-active {
+            position: fixed;
+            z-index: 999;
+            right: 0;
+            width: auto;
+            height: 100vh;
+            transition: 0.3s ease-out;
+        }
+    }
+
+
+    &__inner {
+        padding: 5.25rem 6rem 2.875rem;
+
+        @media only screen and (max-width: 1650px){
+            padding-left: 3rem;
+        }
+
+        @media only screen and (max-width: 1200px){
+            padding-left: 0.5rem;
+        }
+
+        @include breakpoint(m) {
+            padding: 0 6rem 2.875rem;
+        }
+    }
+}

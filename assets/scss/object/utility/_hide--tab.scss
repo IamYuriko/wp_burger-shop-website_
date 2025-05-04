@@ -1,0 +1,18 @@
+@use "../../foundation/global" as *;
+
+
+/*画面幅が~1024pxで非表示*/
+.u-hide--tab {
+    display: none;
+
+    /*画面幅が1024px以上になったら表示*/
+    @include breakpoint(l) {
+        display: block;
+    }
+}
+
+.u-hide--onlyTab {
+    @include breakpoint(m) {
+        display: none;
+    }
+}

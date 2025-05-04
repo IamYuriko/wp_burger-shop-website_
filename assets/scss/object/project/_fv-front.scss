@@ -1,0 +1,30 @@
+@use "../../foundation/global" as *;
+
+//frontのファーストビュー
+
+.p-fv-front {
+    min-height: 530px;
+    position: relative;
+    margin-bottom: 120px;
+
+    @include breakpoint(m) {
+        margin-bottom: 40px;
+        min-height: 285px;
+    }
+
+    @include breakpoint(s) {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 5.375rem;
+        transform: translate(-5.34%, -50%);
+        color: white;
+
+        @include breakpoint(m) {
+            font-size: 3.6rem;
+        }
+    }
+}

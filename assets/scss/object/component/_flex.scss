@@ -1,0 +1,18 @@
+.c-flex {
+    display: flex;
+
+    &--center {
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--column {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &--center-between {
+        align-items: center;
+        justify-content: space-between;
+    }
+}

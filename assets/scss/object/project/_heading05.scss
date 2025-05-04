@@ -1,0 +1,12 @@
+@use "../../foundation/global" as *;
+
+//single、pageの見出し5
+
+.p-heading05 {
+    margin-bottom: 57px;
+
+    @include breakpoint(s) {
+        font-size: 2rem;
+        margin-bottom: 27px;
+    }
+}
